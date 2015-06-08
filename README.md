@@ -39,8 +39,7 @@ Expected Output:
 
 #### To run: 
 "command.txt" and "graph.txt" files are the two input arguments which has been put in build section of pom.xml
- The general syntax of commands is:
-          <command query> [param1] [param2]...
-  for example: 
-        * trips? <5 stops CC        
-        * distance? ABC
+ 
+The general syntax of commands is:    <command query> [param1] [param2]... 
+ * trips? <5 stops CC        
+ * distance? ABC
