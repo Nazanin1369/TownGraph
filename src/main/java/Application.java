@@ -33,7 +33,7 @@ public class Application {
         try {
             s = getInstance().properties.getString(name);
         } catch (MissingResourceException e) {
-            System.err.println("WARNING: missing data: " + name);
+            System.err.println("WARNING: missing info: " + name);
             return "";
         }
         return s;
@@ -62,9 +62,9 @@ public class Application {
 
         try {
             Graph graph = new Graph(getFileInputStream(graphFilename));
-            Commands actions = new Commands(getFileInputStream(commandsFilename));
+            Commands commands = new Commands(getFileInputStream(commandsFilename));
 
-            System.out.println(actions.execute(graph));
+            System.out.println(commands.execute(graph));
         } catch (IOException e) {
             System.err.println("FATAL: " + e.getMessage());
             System.exit(1);

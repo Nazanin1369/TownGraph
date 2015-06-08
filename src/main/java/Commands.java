@@ -15,7 +15,7 @@ public class Commands {
 
     /**
      * Reads an command specification and instantiates the required Command object
-     * and puts it on the commands list for execution later.
+     * and puts it on the commands list to execute it later.
      * @param str
      * @throws IllegalArgumentException
      */
@@ -71,7 +71,6 @@ public class Commands {
         for (Command cmd : commandsList) {
             s.append(cmd + " => " + cmd.execute(graph) + "\n");
         }
-
         return s.toString();
     }
 }

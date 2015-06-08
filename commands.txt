@@ -1,10 +1,10 @@
 distance? ABC
 distance? AD
+trips? =4 stops AC
+shortest? AC
 distance? ADC
 distance? AEBCD
 distance? AED
 trips? <4 stops CC
-trips? =4 stops AC
-shortest? AC
 shortest? BB
 trips? <30 distance CC
